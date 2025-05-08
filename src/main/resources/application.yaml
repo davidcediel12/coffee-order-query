@@ -10,4 +10,4 @@ spring:
   data:
     mongodb:
       database: orders
-      host: ${MONGODB_HOST}
+      uri: mongodb+srv://${MONGO_USERNAME}:${MONGO_PASSWORD}@${MONGO_HOST}.global.mongocluster.cosmos.azure.com/?tls=true&authMechanism=SCRAM-SHA-256&retrywrites=false&maxIdleTimeMS=120000
