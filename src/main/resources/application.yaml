@@ -3,10 +3,6 @@ spring:
     name: orderquery
   kafka:
     bootstrap-servers: ${KAFKA_SERVER}
-    properties:
-      security.protocol: SASL_SSL
-      sasl.mechanism: PLAIN
-      sasl.jaas.config: org.apache.kafka.common.security.plain.PlainLoginModule required username="$ConnectionString" password="${EVENTHUB_CONNECTION_STRING}";
   data:
     mongodb:
       database: orders
